@@ -133,6 +133,8 @@ Pull requests are welcome. Every new pattern needs a positive and a look-alike c
 
 Inspired by [mercury0993/secret-scanner](https://github.com/mercury0993/secret-scanner). See [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md).
 
+<a href="https://tcp-up.org/pages/label-aic.html"><img src="https://tcp-up.org/img/badges/svg/badge_aic_co.svg" alt="TCP/UP: AIC — AI Content" height="28"></a>
+
 ## License
 
 [MIT](LICENSE)
