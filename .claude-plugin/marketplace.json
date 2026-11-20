@@ -1,0 +1,15 @@
+{
+  "name": "secret-preflight",
+  "description": "secret-preflight: go/no-go check for leaked secrets before commit or push",
+  "owner": {
+    "name": "Medenor",
+    "url": "https://github.com/Medenor"
+  },
+  "plugins": [
+    {
+      "name": "secret-preflight",
+      "source": "./plugins/secret-preflight",
+      "description": "Go/no-go check for leaked secrets, private keys, credential files and PII before a commit, push or PR."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+name: selftest
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  selftest:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.8", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Self-test
+        run: python plugins/secret-preflight/skills/secret-preflight/scripts/selftest.py
+      - name: Repo scans clean
+        run: python plugins/secret-preflight/skills/secret-preflight/scripts/scan.py --root . > /dev/null

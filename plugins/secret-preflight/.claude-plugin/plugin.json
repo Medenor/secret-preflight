@@ -1,0 +1,13 @@
+{
+  "name": "secret-preflight",
+  "description": "Go/no-go check for leaked secrets, private keys, credential files and PII before a commit, push or PR. Masking scanner: raw values never reach the model.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Medenor",
+    "url": "https://github.com/Medenor"
+  },
+  "homepage": "https://github.com/Medenor/secret-preflight",
+  "repository": "https://github.com/Medenor/secret-preflight",
+  "license": "MIT",
+  "keywords": ["security", "secrets", "secret-scanning", "pre-commit", "pre-push", "pii"]
+}
